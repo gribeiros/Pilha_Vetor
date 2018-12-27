@@ -12,7 +12,7 @@ Pilha* p=(Pilha*)malloc(sizeof(Pilha));
 p->n=0;
 return p;
 }
-
+//Adiciona a Pilha
 void push(Pilha* p,float v){
 if(p->n==N){
     printf("Capacidade MAX");
@@ -21,7 +21,7 @@ if(p->n==N){
     p->vet[p->n]=v;
     p->n++;
 }
-
+//Remove da Pilha
 float pop(Pilha* p){
     float v;
     if(pilha_Vazia(p)){
